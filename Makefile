@@ -1,4 +1,4 @@
-.PHONY: install, test, lint, format, bash
+.PHONY: install, test, lint, format, bash, run
 
 install:
 	docker compose run --rm app bundle install
@@ -14,3 +14,6 @@ format:
 
 bash:
 	docker compose run --rm app bash --login
+
+run:
+	docker compose run --rm app bundle exec ruby main.rb
