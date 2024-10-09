@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
+require 'spec_helper'
+
 require './main'
 
-describe Main do
+RSpec.describe Main do
   describe 'run', :vcr do
     let(:instance) { described_class.new }
 

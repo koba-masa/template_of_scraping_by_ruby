@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'nokogiri'
+gem 'selenium-webdriver', '~> 4.25'
 
 group :development, :test do
   gem 'vcr'
